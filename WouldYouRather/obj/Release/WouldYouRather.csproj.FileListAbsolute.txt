@@ -1,0 +1,13 @@
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\bin\Release\WouldYouRather.exe.config
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\bin\Release\WouldYouRather.exe
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\bin\Release\WouldYouRather.pdb
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\bin\Release\Newtonsoft.Json.dll
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\bin\Release\Newtonsoft.Json.xml
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.AddJSON.resources
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.WouldYouRather.resources
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.Properties.Resources.resources
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.csproj.GenerateResource.cache
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.csproj.CoreCompileInputs.cache
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.csproj.CopyComplete
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.exe
+C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.pdb
