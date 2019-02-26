@@ -21,9 +21,10 @@ namespace WouldYouRather
         string json, output;
         double bluePercent, redPercent;
 
-        public WouldYouRather()
+        public WouldYouRather(string username)
         {
             InitializeComponent();
+            lblUser.Text = "Playing as: " + username;
         }
 
         public void loadJson()
@@ -45,6 +46,23 @@ namespace WouldYouRather
         {
             loadJson();
             changeQuestion();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About abtForm = new About();
+            abtForm.Show();
+        }
+
+        private void addChoiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddJSON f1 = new AddJSON(items);
+            f1.Show();
+        }
+
+        private void WouldYouRather_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

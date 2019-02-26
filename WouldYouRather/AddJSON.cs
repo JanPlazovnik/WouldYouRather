@@ -15,7 +15,7 @@ namespace WouldYouRather
 {
     public partial class AddJSON : Form
     {
-        string json, output;
+        string output;
         private List<Item> items;
         public AddJSON(List<Item> items)
         {
@@ -25,15 +25,28 @@ namespace WouldYouRather
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Item newChoice = new Item();
-            newChoice.red = redChoice.Text;
-            newChoice.blue = blueChoice.Text;
+            try
+            {
+                Item newChoice = new Item();
+                if (redChoice.Text != "" && blueChoice.Text != "")
+                {
+                    newChoice.red = redChoice.Text;
+                    newChoice.blue = blueChoice.Text;
 
-            items.Add(newChoice);
+                    items.Add(newChoice);
 
-            output = Newtonsoft.Json.JsonConvert.SerializeObject(items, Newtonsoft.Json.Formatting.Indented);
+                    output = Newtonsoft.Json.JsonConvert.SerializeObject(items, Newtonsoft.Json.Formatting.Indented);
 
-            File.WriteAllText("../../Questions/questions.json", output);
+                    File.WriteAllText("../../Questions/questions.json", output);
+
+                    redChoice.Text = blueChoice.Text = "";
+                }
+                else MessageBox.Show("Fields must not be empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show(er.Message, "Napaka", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
