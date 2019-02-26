@@ -21,10 +21,10 @@ namespace WouldYouRather
         string json, output;
         double bluePercent, redPercent;
 
-        public WouldYouRather(string username)
+        public WouldYouRather(string username, int admin)
         {
             InitializeComponent();
-            lblUser.Text = "Playing as: " + username;
+            lblUser.Text = $"Playing as: {username} ({(admin == 1 ? "Admin" : "User")})";
         }
 
         public void loadJson()

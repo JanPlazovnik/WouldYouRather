@@ -156,7 +156,8 @@
             // addChoiceToolStripMenuItem
             // 
             this.addChoiceToolStripMenuItem.Name = "addChoiceToolStripMenuItem";
-            this.addChoiceToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.addChoiceToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.addChoiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addChoiceToolStripMenuItem.Text = "Add Choice";
             this.addChoiceToolStripMenuItem.Click += new System.EventHandler(this.addChoiceToolStripMenuItem_Click);
             // 
@@ -173,7 +174,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.ShortcutKeyDisplayString = "F1";
             this.aboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
