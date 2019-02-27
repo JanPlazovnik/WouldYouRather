@@ -8,31 +8,31 @@
   {
     "red": "Option3",
     "blue": "Option4",
-    "redclicks": 0,
+    "redclicks": 4,
     "blueclicks": 0
   },
   {
     "red": "Option5",
     "blue": "Option6",
-    "redclicks": 1,
+    "redclicks": 2,
     "blueclicks": 0
   },
   {
     "red": "Option7",
     "blue": "Option8",
-    "redclicks": 0,
-    "blueclicks": 0
+    "redclicks": 1,
+    "blueclicks": 1
   },
   {
     "red": "Option9",
     "blue": "Option10",
-    "redclicks": 1,
-    "blueclicks": 0
+    "redclicks": 2,
+    "blueclicks": 2
   },
   {
     "red": "Option11",
     "blue": "Option12",
-    "redclicks": 0,
-    "blueclicks": 0
+    "redclicks": 1,
+    "blueclicks": 2
   }
 ]

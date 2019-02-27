@@ -8,9 +8,9 @@ namespace WouldYouRather
 {
     public class Item
     {
-        public string red;
-        public string blue;
-        public int redclicks = 0;
-        public int blueclicks = 0;
+        public string red { get; set; }
+        public string blue { get; set; }
+        public int redclicks { get; set; } = 0;
+        public int blueclicks { get; set; } = 0;
     }
 }

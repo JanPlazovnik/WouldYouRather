@@ -25,7 +25,9 @@ namespace WouldYouRather
         {
             InitializeComponent();
             lblUser.Text = $"Playing as: {username} ({(admin == 1 ? "Admin" : "User")})";
-        }
+            if (admin == 1) adminPanelToolStripMenuItem.Visible = true;
+            else if (admin == 0) adminPanelToolStripMenuItem.Visible = false;
+    }
 
         public void loadJson()
         {
@@ -63,6 +65,19 @@ namespace WouldYouRather
         private void WouldYouRather_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Welcome welcomeForm = (Welcome)Application.OpenForms["Welcome"];
+            this.Hide();
+            welcomeForm.Show();
+        }
+
+        private void adminPanelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel(items);
+            adminPanel.Show();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

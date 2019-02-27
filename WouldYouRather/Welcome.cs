@@ -58,6 +58,7 @@ namespace WouldYouRather
                         else
                         {
                             WouldYouRather mainForm = new WouldYouRather(tbRegisterUsername.Text, 0);
+                            btnLoginBack_Click(sender, e);
                             mainForm.Show();
                             this.Hide();
                         }
@@ -91,6 +92,7 @@ namespace WouldYouRather
                         SQLiteDataReader reader = sql.ExecuteReader();
                         var count = 0;
                         int admin = 0;
+
                         while (reader.Read())
                         {
                             count++;
@@ -103,10 +105,11 @@ namespace WouldYouRather
                             conn.Close();
                             return;
                         }
+
                         WouldYouRather mainForm = new WouldYouRather(tbLoginUsername.Text, admin);
+                        btnLoginBack_Click(sender, e);
                         mainForm.Show();
                         this.Hide();
-
 
                         sql.Dispose();
                     }
