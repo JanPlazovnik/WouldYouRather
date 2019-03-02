@@ -34,5 +34,11 @@
     "blue": "Option12",
     "redclicks": 1,
     "blueclicks": 2
+  },
+  {
+    "red": "abc",
+    "blue": "def",
+    "redclicks": 0,
+    "blueclicks": 0
   }
 ]

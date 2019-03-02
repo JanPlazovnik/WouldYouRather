@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,20 +38,10 @@ namespace WouldYouRather
             dataGridView1.DataSource = GridSource;
         }
 
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            string output = JsonConvert.SerializeObject(this.dataGridView1.DataSource, Newtonsoft.Json.Formatting.Indented);
+            System.IO.File.WriteAllText("../../Questions/questions.json", output);
         }
     }
 }
