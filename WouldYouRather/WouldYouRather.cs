@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -18,12 +19,14 @@ namespace WouldYouRather
         private List<Item> items;
         int random, tempRand, currentIndex, total = 0;
         int seconds = 5;
+        int user_id = 0;
         string json, output;
         double bluePercent, redPercent;
 
-        public WouldYouRather(string username, int admin)
+        public WouldYouRather(int id, string username, int admin)
         {
             InitializeComponent();
+            user_id = id;
             lblUser.Text = $"Playing as: {username} ({(admin == 1 ? "Admin" : "User")})";
             if (admin == 1) adminPanelToolStripMenuItem.Visible = true;
             else if (admin == 0) adminPanelToolStripMenuItem.Visible = false;
@@ -36,12 +39,6 @@ namespace WouldYouRather
                 json = r.ReadToEnd();
                 items = JsonConvert.DeserializeObject<List<Item>>(json);
             }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            AddJSON f1 = new AddJSON(items);
-            f1.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -95,16 +92,27 @@ namespace WouldYouRather
 
         private void button1_Click(object sender, EventArgs e) //red
         {
+            buttonMechanics((Button)sender, (item) => item.redclicks++);
+            saveHistory(0); // 0 = red, 1 = blue
+        }
+
+
+        private void button2_Click(object sender, EventArgs e) //blue
+        {
+            buttonMechanics((Button)sender, (item) => item.blueclicks++);
+            saveHistory(1); // 0 = red, 1 = blue
+        }
+
+        void buttonMechanics(Button btn, Action<Item> color)
+        {
             button1.Enabled = button2.Enabled = false;
-            button1.FlatAppearance.BorderSize = 5;
-            items[currentIndex].redclicks += 1;
+            btn.FlatAppearance.BorderSize = 5;
+            color(items[currentIndex]);
             redCount.Visible = blueCount.Visible = true;
 
             output = Newtonsoft.Json.JsonConvert.SerializeObject(items, Newtonsoft.Json.Formatting.Indented);
 
             File.WriteAllText("../../Questions/questions.json", output);
-
-
             if (items[currentIndex].redclicks != 0 && items[currentIndex].blueclicks != 0)
             {
                 total = items[currentIndex].redclicks + items[currentIndex].blueclicks;
@@ -123,39 +131,40 @@ namespace WouldYouRather
                 redCount.Text = "0%";
                 blueCount.Text = "100%";
             }
+
             timer1.Enabled = true;
         }
 
-        private void button2_Click(object sender, EventArgs e) //blue
+        void saveHistory(int choice)
         {
-            button1.Enabled = button2.Enabled = false;
-            button2.FlatAppearance.BorderSize = 5;
-            items[currentIndex].blueclicks += 1;
-            redCount.Visible = blueCount.Visible = true;
-
-            output = Newtonsoft.Json.JsonConvert.SerializeObject(items, Newtonsoft.Json.Formatting.Indented);
-
-            File.WriteAllText("../../Questions/questions.json", output);
-            if (items[currentIndex].redclicks != 0 && items[currentIndex].blueclicks != 0)
+            try
             {
-                total = items[currentIndex].redclicks + items[currentIndex].blueclicks;
-                bluePercent = ((double)items[currentIndex].blueclicks / total) * 100;
-                redPercent = ((double)items[currentIndex].redclicks / total) * 100;
-                redCount.Text = Math.Round(redPercent) + "%";
-                blueCount.Text = Math.Round(bluePercent) + "%";
+                using (SQLiteConnection conn = new SQLiteConnection("data source=database.db"))
+                {
+                    conn.Open();
+                    using (SQLiteCommand sql = new SQLiteCommand("INSERT INTO history(user_id, option_red, option_blue, choice) VALUES(?, ?, ?, ?)", conn))
+                    {
+                        sql.Parameters.AddWithValue("user_id", user_id);
+                        sql.Parameters.AddWithValue("option_red", button1.Text);
+                        sql.Parameters.AddWithValue("option_blue", button2.Text);
+                        sql.Parameters.AddWithValue("choice", choice); 
+                        if (sql.ExecuteNonQuery() == 0)
+                        {
+                            MessageBox.Show("Error updating database", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            Console.Write("work");
+                        }
+                        sql.Dispose();
+                    }
+                    conn.Close();
+                }
             }
-            else if(items[currentIndex].redclicks > 0 && items[currentIndex].blueclicks == 0)
+            catch (Exception er)
             {
-                redCount.Text = "100%";
-                blueCount.Text = "0%";
+                MessageBox.Show(er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-            {
-                redCount.Text = "0%";
-                blueCount.Text = "100%";
-            }
-
-            timer1.Enabled = true;
         }
 
         void changeQuestion()

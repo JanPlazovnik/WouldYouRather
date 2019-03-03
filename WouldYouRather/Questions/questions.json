@@ -3,42 +3,42 @@
     "red": "Option1",
     "blue": "Option2",
     "redclicks": 0,
-    "blueclicks": 0
+    "blueclicks": 1
   },
   {
     "red": "Option3",
     "blue": "Option4",
-    "redclicks": 4,
+    "redclicks": 2,
     "blueclicks": 0
   },
   {
     "red": "Option5",
     "blue": "Option6",
-    "redclicks": 2,
-    "blueclicks": 0
+    "redclicks": 0,
+    "blueclicks": 2
   },
   {
     "red": "Option7",
     "blue": "Option8",
-    "redclicks": 1,
-    "blueclicks": 1
+    "redclicks": 3,
+    "blueclicks": 2
   },
   {
     "red": "Option9",
     "blue": "Option10",
     "redclicks": 2,
-    "blueclicks": 2
+    "blueclicks": 0
   },
   {
     "red": "Option11",
     "blue": "Option12",
-    "redclicks": 1,
-    "blueclicks": 2
+    "redclicks": 2,
+    "blueclicks": 1
   },
   {
     "red": "abc",
     "blue": "def",
-    "redclicks": 0,
-    "blueclicks": 0
+    "redclicks": 1,
+    "blueclicks": 1
   }
 ]

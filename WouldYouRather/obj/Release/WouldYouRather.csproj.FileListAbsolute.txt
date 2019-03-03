@@ -11,3 +11,29 @@ C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRath
 C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.csproj.CopyComplete
 C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.exe
 C:\Users\Jan\source\repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.pdb
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\WouldYouRather.exe.config
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\WouldYouRather.exe
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\WouldYouRather.pdb
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\EntityFramework.dll
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\EntityFramework.SqlServer.dll
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\Newtonsoft.Json.dll
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\System.Data.SQLite.dll
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\System.Data.SQLite.EF6.dll
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\System.Data.SQLite.Linq.dll
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\EntityFramework.xml
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\EntityFramework.SqlServer.xml
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\Newtonsoft.Json.xml
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\System.Data.SQLite.xml
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\bin\Release\System.Data.SQLite.dll.config
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.About.resources
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.AddJSON.resources
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.AdminPanel.resources
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.Welcome.resources
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.WouldYouRather.resources
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.Properties.Resources.resources
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.csproj.GenerateResource.cache
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.csproj.CopyComplete
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.exe
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.pdb
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Release\WouldYouRather.csprojAssemblyReference.cache
