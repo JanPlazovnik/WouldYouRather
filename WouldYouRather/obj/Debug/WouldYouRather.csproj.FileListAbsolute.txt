@@ -66,7 +66,6 @@ C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\bin\Debug\Newtonsoft.Json.x
 C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.csprojAssemblyReference.cache
 C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.About.resources
 C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.AddJSON.resources
-C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.User.resources
 C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.WouldYouRather.resources
 C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.Properties.Resources.resources
 C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.csproj.GenerateResource.cache
@@ -161,3 +160,6 @@ H:\repos\WouldYouRather-master\WouldYouRather\obj\Debug\WouldYouRather.exe
 H:\repos\WouldYouRather-master\WouldYouRather\obj\Debug\WouldYouRather.pdb
 D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.AdminPanel.resources
 D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.UserHistory.resources
+C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.AdminPanel.resources
+C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.UserHistory.resources
+C:\Users\janpl\Desktop\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.Welcome.resources

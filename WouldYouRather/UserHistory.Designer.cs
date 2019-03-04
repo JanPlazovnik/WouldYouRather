@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lblNoHistory = new System.Windows.Forms.Label();
+            this.flpContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // lblNoHistory
@@ -42,12 +43,24 @@
             this.lblNoHistory.Text = "No recorded history for this user";
             this.lblNoHistory.Visible = false;
             // 
+            // flpContainer
+            // 
+            this.flpContainer.AutoScroll = true;
+            this.flpContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpContainer.Location = new System.Drawing.Point(0, 0);
+            this.flpContainer.Name = "flpContainer";
+            this.flpContainer.Size = new System.Drawing.Size(815, 450);
+            this.flpContainer.TabIndex = 1;
+            // 
             // UserHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(815, 450);
+            this.Controls.Add(this.flpContainer);
             this.Controls.Add(this.lblNoHistory);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "UserHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User History";
@@ -60,5 +73,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblNoHistory;
+        private System.Windows.Forms.FlowLayoutPanel flpContainer;
     }
 }

@@ -39,14 +39,49 @@ namespace WouldYouRather
                             string red = reader.GetString(2);
                             string blue = reader.GetString(3);
                             int choice = reader.GetInt32(4);
+
+                            Button wrapperRed = new Button();
+                            wrapperRed.FlatStyle = FlatStyle.Flat;
+                            wrapperRed.Height = 50;
+                            wrapperRed.Width = (this.Width / 2) - 30;
+                            wrapperRed.BackColor = Color.LightCoral;
+                            wrapperRed.Text = red;
+                            wrapperRed.Enabled = false;
+
+                            Button wrapperBlue = new Button();
+                            wrapperBlue.FlatStyle = FlatStyle.Flat;
+                            wrapperBlue.Height = 50;
+                            wrapperBlue.Width = (this.Width / 2) - 30;
+                            wrapperBlue.BackColor = SystemColors.ActiveCaption;
+                            wrapperBlue.Text = blue;
+                            wrapperBlue.Enabled = false;
+
+                            if (choice == 0)
+                            {
+                                wrapperRed.FlatAppearance.BorderSize = 5;
+                                wrapperBlue.FlatAppearance.BorderSize = 0;
+                            }
+                            else if(choice == 1)
+                            {
+                                wrapperRed.FlatAppearance.BorderSize = 0;
+                                wrapperBlue.FlatAppearance.BorderSize = 5;
+                            }
+                            flpContainer.Controls.Add(wrapperRed);
+                            flpContainer.Controls.Add(wrapperBlue);
+                           
                             //MessageBox.Show($"{red} | {blue} | {choice}");
                             count++;
                         }
                         if (count == 0)
                         {
+                            flpContainer.Visible = false;
                             lblNoHistory.Visible = true;
                         }
-
+                        if (count > 0)
+                        {
+                            flpContainer.Visible = true;
+                            lblNoHistory.Visible = false;
+                        }
                         sql.Dispose();
                     }
                     conn.Close();
