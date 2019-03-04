@@ -160,3 +160,4 @@ H:\repos\WouldYouRather-master\WouldYouRather\obj\Debug\WouldYouRather.csproj.Co
 H:\repos\WouldYouRather-master\WouldYouRather\obj\Debug\WouldYouRather.exe
 H:\repos\WouldYouRather-master\WouldYouRather\obj\Debug\WouldYouRather.pdb
 D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.AdminPanel.resources
+D:\Visual Studio\Repos\WouldYouRather\WouldYouRather\obj\Debug\WouldYouRather.UserHistory.resources

@@ -96,6 +96,11 @@ namespace WouldYouRather
             saveHistory(0); // 0 = red, 1 = blue
         }
 
+        private void historyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserHistory historyForm = new UserHistory(user_id);
+            historyForm.Show();
+        }
 
         private void button2_Click(object sender, EventArgs e) //blue
         {

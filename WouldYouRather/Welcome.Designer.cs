@@ -32,19 +32,19 @@
             this.btnRegisterPanel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlLogin = new System.Windows.Forms.Panel();
-            this.tbLoginUsername = new System.Windows.Forms.TextBox();
-            this.tbLoginPassword = new System.Windows.Forms.TextBox();
-            this.lblLoginUsername = new System.Windows.Forms.Label();
-            this.lblLoginPassword = new System.Windows.Forms.Label();
+            this.btnLoginBack = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.lblLoginPassword = new System.Windows.Forms.Label();
+            this.lblLoginUsername = new System.Windows.Forms.Label();
+            this.tbLoginPassword = new System.Windows.Forms.TextBox();
+            this.tbLoginUsername = new System.Windows.Forms.TextBox();
             this.pnlRegister = new System.Windows.Forms.Panel();
+            this.btnRegisterBack = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.lblRegisterPassword = new System.Windows.Forms.Label();
             this.lblRegisterUsername = new System.Windows.Forms.Label();
             this.tbRegisterPassword = new System.Windows.Forms.TextBox();
             this.tbRegisterUsername = new System.Windows.Forms.TextBox();
-            this.btnRegisterBack = new System.Windows.Forms.Button();
-            this.btnLoginBack = new System.Windows.Forms.Button();
             this.pnlLogin.SuspendLayout();
             this.pnlRegister.SuspendLayout();
             this.SuspendLayout();
@@ -94,38 +94,15 @@
             this.pnlLogin.TabIndex = 3;
             this.pnlLogin.Visible = false;
             // 
-            // tbLoginUsername
+            // btnLoginBack
             // 
-            this.tbLoginUsername.Location = new System.Drawing.Point(116, 45);
-            this.tbLoginUsername.Name = "tbLoginUsername";
-            this.tbLoginUsername.Size = new System.Drawing.Size(168, 20);
-            this.tbLoginUsername.TabIndex = 0;
-            // 
-            // tbLoginPassword
-            // 
-            this.tbLoginPassword.Location = new System.Drawing.Point(116, 94);
-            this.tbLoginPassword.Name = "tbLoginPassword";
-            this.tbLoginPassword.PasswordChar = '*';
-            this.tbLoginPassword.Size = new System.Drawing.Size(168, 20);
-            this.tbLoginPassword.TabIndex = 1;
-            // 
-            // lblLoginUsername
-            // 
-            this.lblLoginUsername.AutoSize = true;
-            this.lblLoginUsername.Location = new System.Drawing.Point(113, 29);
-            this.lblLoginUsername.Name = "lblLoginUsername";
-            this.lblLoginUsername.Size = new System.Drawing.Size(55, 13);
-            this.lblLoginUsername.TabIndex = 2;
-            this.lblLoginUsername.Text = "Username";
-            // 
-            // lblLoginPassword
-            // 
-            this.lblLoginPassword.AutoSize = true;
-            this.lblLoginPassword.Location = new System.Drawing.Point(113, 78);
-            this.lblLoginPassword.Name = "lblLoginPassword";
-            this.lblLoginPassword.Size = new System.Drawing.Size(53, 13);
-            this.lblLoginPassword.TabIndex = 3;
-            this.lblLoginPassword.Text = "Password";
+            this.btnLoginBack.Location = new System.Drawing.Point(117, 141);
+            this.btnLoginBack.Name = "btnLoginBack";
+            this.btnLoginBack.Size = new System.Drawing.Size(73, 43);
+            this.btnLoginBack.TabIndex = 6;
+            this.btnLoginBack.Text = "Back";
+            this.btnLoginBack.UseVisualStyleBackColor = true;
+            this.btnLoginBack.Click += new System.EventHandler(this.btnLoginBack_Click);
             // 
             // btnLogin
             // 
@@ -136,6 +113,39 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // lblLoginPassword
+            // 
+            this.lblLoginPassword.AutoSize = true;
+            this.lblLoginPassword.Location = new System.Drawing.Point(113, 78);
+            this.lblLoginPassword.Name = "lblLoginPassword";
+            this.lblLoginPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblLoginPassword.TabIndex = 3;
+            this.lblLoginPassword.Text = "Password";
+            // 
+            // lblLoginUsername
+            // 
+            this.lblLoginUsername.AutoSize = true;
+            this.lblLoginUsername.Location = new System.Drawing.Point(113, 29);
+            this.lblLoginUsername.Name = "lblLoginUsername";
+            this.lblLoginUsername.Size = new System.Drawing.Size(55, 13);
+            this.lblLoginUsername.TabIndex = 2;
+            this.lblLoginUsername.Text = "Username";
+            // 
+            // tbLoginPassword
+            // 
+            this.tbLoginPassword.Location = new System.Drawing.Point(116, 94);
+            this.tbLoginPassword.Name = "tbLoginPassword";
+            this.tbLoginPassword.PasswordChar = '*';
+            this.tbLoginPassword.Size = new System.Drawing.Size(168, 20);
+            this.tbLoginPassword.TabIndex = 1;
+            // 
+            // tbLoginUsername
+            // 
+            this.tbLoginUsername.Location = new System.Drawing.Point(116, 45);
+            this.tbLoginUsername.Name = "tbLoginUsername";
+            this.tbLoginUsername.Size = new System.Drawing.Size(168, 20);
+            this.tbLoginUsername.TabIndex = 0;
             // 
             // pnlRegister
             // 
@@ -151,6 +161,16 @@
             this.pnlRegister.Size = new System.Drawing.Size(400, 228);
             this.pnlRegister.TabIndex = 5;
             this.pnlRegister.Visible = false;
+            // 
+            // btnRegisterBack
+            // 
+            this.btnRegisterBack.Location = new System.Drawing.Point(117, 141);
+            this.btnRegisterBack.Name = "btnRegisterBack";
+            this.btnRegisterBack.Size = new System.Drawing.Size(73, 43);
+            this.btnRegisterBack.TabIndex = 5;
+            this.btnRegisterBack.Text = "Back";
+            this.btnRegisterBack.UseVisualStyleBackColor = true;
+            this.btnRegisterBack.Click += new System.EventHandler(this.btnLoginBack_Click);
             // 
             // btnRegister
             // 
@@ -195,26 +215,6 @@
             this.tbRegisterUsername.Size = new System.Drawing.Size(168, 20);
             this.tbRegisterUsername.TabIndex = 0;
             // 
-            // btnRegisterBack
-            // 
-            this.btnRegisterBack.Location = new System.Drawing.Point(117, 141);
-            this.btnRegisterBack.Name = "btnRegisterBack";
-            this.btnRegisterBack.Size = new System.Drawing.Size(73, 43);
-            this.btnRegisterBack.TabIndex = 5;
-            this.btnRegisterBack.Text = "Back";
-            this.btnRegisterBack.UseVisualStyleBackColor = true;
-            this.btnRegisterBack.Click += new System.EventHandler(this.btnLoginBack_Click);
-            // 
-            // btnLoginBack
-            // 
-            this.btnLoginBack.Location = new System.Drawing.Point(117, 141);
-            this.btnLoginBack.Name = "btnLoginBack";
-            this.btnLoginBack.Size = new System.Drawing.Size(73, 43);
-            this.btnLoginBack.TabIndex = 6;
-            this.btnLoginBack.Text = "Back";
-            this.btnLoginBack.UseVisualStyleBackColor = true;
-            this.btnLoginBack.Click += new System.EventHandler(this.btnLoginBack_Click);
-            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +226,7 @@
             this.Controls.Add(this.btnRegisterPanel);
             this.Controls.Add(this.btnLoginPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Welcome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
